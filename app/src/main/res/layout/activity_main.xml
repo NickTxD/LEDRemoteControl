@@ -6,63 +6,193 @@
     android:layout_height="match_parent"
     tools:context="nicktxd.ledremotecontrol.MainActivity">
 
-    <LinearLayout
+    <TableLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <Button
-            android:id="@+id/btON"
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="ON"
-            tools:layout_editor_absoluteX="43dp"
-            tools:layout_editor_absoluteY="207dp" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btOFF"
+            <Button
+                android:id="@+id/btON"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ON"
+                tools:layout_editor_absoluteX="43dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <Button
+                android:id="@+id/btOFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="OFF"
+                tools:layout_editor_absoluteX="233dp"
+                tools:layout_editor_absoluteY="207dp" />
+
+            <Button
+                android:id="@+id/btBrightUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bright Up" />
+
+            <Button
+                android:id="@+id/btBrightDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bright Down" />
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="OFF"
-            tools:layout_editor_absoluteX="233dp"
-            tools:layout_editor_absoluteY="207dp" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btBrightUp"
+            <Button
+                android:id="@+id/btRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Red" />
+
+            <Button
+                android:id="@+id/btGreen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Green" />
+
+            <Button
+                android:id="@+id/btBlue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Blue" />
+
+            <Button
+                android:id="@+id/btWhite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="White" />
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bright Up" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btBrightDown"
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4" />
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Bright Down" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btRed"
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/bt6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/bt7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/bt8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="8" />
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Red" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btGreen"
+            <Button
+                android:id="@+id/bt9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/bt10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="10" />
+
+            <Button
+                android:id="@+id/bt11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="11" />
+
+            <Button
+                android:id="@+id/bt12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12" />
+
+        </TableRow>
+
+        <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Green" />
+            android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/btBlue"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Blue" />
+            <Button
+                android:id="@+id/btFlash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Flash" />
 
-        <Button
-            android:id="@+id/btWhite"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="White" />
+            <Button
+                android:id="@+id/btStrobe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strobe" />
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btFade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fade" />
+
+            <Button
+                android:id="@+id/btSmooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smooth" />
+
+        </TableRow>
+    </TableLayout>
 
 </android.support.constraint.ConstraintLayout>
